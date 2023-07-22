@@ -77,11 +77,11 @@ button:hover {
 
 @media only screen and (max-width: 467px) { 
     body {
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
 
     .field {
-        margin: 0 0 0 -25vw;
+        margin: 0 0 0 -15vw;
         
 
     }
