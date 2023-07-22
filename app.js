@@ -24,7 +24,6 @@
    }
  }
 
-
  // Generate random bomb positions
  const bombPositions = [];
  while (bombPositions.length < numBombs) {
@@ -97,10 +96,17 @@ const refreshPage = () => {
 restartBtn.addEventListener('click', refreshPage)
 
 // Play audio
-function playAudio() {
-  var audio = new Audio('music_zapsplat_astro_race.mp3');
-  audio.play();
+let myAudio = document.querySelector(".themeSound"); 
+let isPlaying = false;
 
-}
+  function togglePlay() {
+    isPlaying ? myAudio.pause() : myAudio.play();
+    isPlaying = !isPlaying; // Toggle zwischen true und false
+  };
 
-  
+  myAudio.onplaying = function() {
+    isPlaying = true;
+  };
+  myAudio.onpause = () => {
+    isPlaying = false;
+  };

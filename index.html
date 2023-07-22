@@ -21,12 +21,10 @@
             <button class="restartBtn">New Game</button>
 
             <audio class="themeSound">
-                <source src="music_zapsplat_astro_race.mp3" type="music_zapsplat_astro_race.mp3">
-                <!-- Fallback-Inhalt für Browser, die das audio-Element nicht unterstützen -->
-                Dein Browser unterstützt das audio-Element nicht.
+                <source src="music_zapsplat_astro_race.mp3" type="audio/mpeg" id="myAudio">
               </audio>
             
-              <button onclick="playAudio()">Sound on</button>
+              <button onclick="togglePlay()">Sound on</button>
 
     </main>
     <script src="app.js"></script>
