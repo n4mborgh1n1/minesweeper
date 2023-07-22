@@ -1,5 +1,5 @@
 :root {
-    
+
 --fieldColor: rgb(201, 201, 201);
 
 }
@@ -14,13 +14,25 @@ h1 {
     margin: 100px 0 20px 0;
 }
 
+button {
+    font-size: 20px;
+    font-family: 'Bungee Spice', cursive;
+    padding: 10px 15px 10px 15px;
+    margin: 25px 15px 0 15px;
+    background-color: rgb(25, 25, 25);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
 .field {
     width: 432px;
     height: 432px;
     background-color: grey;
     margin: 0 auto;
     border-radius: 5px;
-    border: 10px solid var(--fieldColor);
+    border: 10px solid white;
     font-family: 'Tektur', cursive;
     display: flex;
     flex-wrap: wrap;
@@ -29,11 +41,35 @@ h1 {
 .field div {
     width: 50px;
     height: 50px;
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(144, 144, 144);
     border: 2px solid var(--fieldColor);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+    border
+
+
 
 }
+
+.field div.revealed:not(.bomb) {
+    background-color: rgb(90, 90, 90);
+  }
+  
+
+.field div.flag {
+    background-color: rgba(255, 0, 0, 0.664);
+  }
+
+.field div:hover {
+    background-color: rgb(119, 119, 119);
+}
    
-.numberMines {
-    font-size: 20px;
+
+.restartBtn:hover {
+    background-color: rgba(255, 0, 0, 0.225);
 }
